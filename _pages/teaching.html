@@ -7,10 +7,23 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign teaching_entries = site.teaching | sort: "date" | reverse %}
+{% assign princeton_entries = site.teaching | where: "venue", "Princeton University" | sort: "date" | reverse %}
+{% assign columbia_entries = site.teaching | where: "venue", "Columbia University" | sort: "date" | reverse %}
 
-<ul class="teaching-list">
-  {% for post in teaching_entries %}
-    {% include teaching-list-item.html %}
-  {% endfor %}
-</ul>
+<section class="teaching-group" aria-labelledby="princeton-teaching-heading">
+  <h2 id="princeton-teaching-heading">Princeton University</h2>
+  <ul class="teaching-list">
+    {% for post in princeton_entries %}
+      {% include teaching-list-item.html %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="teaching-group" aria-labelledby="columbia-teaching-heading">
+  <h2 id="columbia-teaching-heading">Columbia University</h2>
+  <ul class="teaching-list">
+    {% for post in columbia_entries %}
+      {% include teaching-list-item.html %}
+    {% endfor %}
+  </ul>
+</section>
