@@ -11,28 +11,23 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign publication_entries = site.publications | sort: "sort_order" %}
+{% assign publication_entries = site.publications | where_exp: "post", "post.category != 'expository'" | sort: "date" | reverse %}
+{% assign expository_entries = site.publications | where: "category", "expository" | sort: "date" | reverse %}
 
 <section class="publication-list" aria-labelledby="publications-heading">
-  <h2 id="publications-heading">Publications</h2>
+  <h2 id="publications-heading">Publications and Preprints</h2>
   <ul class="publication-list">
     {% for post in publication_entries %}
-      {% if post.category == "publications" %}
-        {% include publication-list-item.html %}
-      {% endif %}
+      {% include publication-list-item.html %}
     {% endfor %}
   </ul>
 </section>
 
-<section class="publication-list" aria-labelledby="preprints-heading">
-  <h2 id="preprints-heading">Preprints</h2>
+<section class="publication-list" aria-labelledby="expository-heading">
+  <h2 id="expository-heading">Expository</h2>
   <ul class="publication-list">
-    {% for post in publication_entries %}
-      {% if post.category == "preprints" %}
-        {% include publication-list-item.html %}
-      {% endif %}
+    {% for post in expository_entries %}
+      {% include publication-list-item.html %}
     {% endfor %}
   </ul>
 </section>
-
-

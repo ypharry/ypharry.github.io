@@ -66,16 +66,13 @@
 % Command to produce a paper:
 %	#1 (optional) joint authors
 % 	#2 title
-%	#3 status - in preparation, submitted, accepted by..., to appear in..., etc.
-%	#4 Anything else, e.g. links
-\newcommand{\paper}[4][\@nil]{%
+%	#3 status, publication reference, or links
+\newcommand{\paper}[3][\@nil]{%
   \def\tmp{#1}%
   
    \ifx\tmp\@nnil
-       \textbf{#2}. #3. #4
+       \textbf{#2}. #3
     \else
-       \textbf{#2} (joint with #1). #3. #4
+       \textbf{#2} (joint with #1). #3
     \fi
 }
-    
-    
