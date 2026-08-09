@@ -1,5 +1,5 @@
 ---
-title: "stability capilalry cone"
+title: "stability capillary cone"
 collection: publications
 category: preprints
 sort_order: 5

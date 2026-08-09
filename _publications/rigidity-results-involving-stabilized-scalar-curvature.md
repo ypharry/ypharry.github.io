@@ -4,6 +4,6 @@ collection: publications
 category: preprints
 sort_order: 8
 authors: "Yipeng (Harry) Wang"
-status: "to appear ***"
+status: "to appear"
 permalink: /publication/rigidity-results-involving-stabilized-scalar-curvature
 ---
