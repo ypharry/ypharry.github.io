@@ -56,11 +56,10 @@
 - Modify: `_config.yml`
 - Modify: `_data/navigation.yml`
 - Modify: `_pages/about.md`
-- Modify: `_pages/cv.md`
 
 **Interfaces:**
 - Consumes: Task 1’s identity and contact values.
-- Produces: The site-wide author object, homepage copy, and four-link primary navigation used by the sidebar.
+- Produces: The site-wide author object, homepage copy, and four-link primary navigation used by the sidebar. Task 7 owns the CV page and generated PDF so that the page is never committed with a broken link.
 
 - [ ] **Step 1: Add a pre-change validation command**
 
@@ -84,24 +83,20 @@
 
   Rewrite `_pages/about.md` with root permalink `/`, `layout: single`, `author_profile: true`, no rendered page title, and first-person copy that introduces Harry’s Princeton role, Columbia advising history, and differential-geometry research. Link to publications, teaching, and CV using normal site links.
 
-- [ ] **Step 5: Replace the CV page source**
-
-  Rewrite `_pages/cv.md` as a short profile page with a concise first-person description and one explicit link to the confirmed current PDF. Remove the sample education, employment, skills, publications, talks, and teaching text.
-
-- [ ] **Step 6: Validate configuration content**
+- [ ] **Step 5: Validate configuration content**
 
   Run:
 
   ```bash
-  ! rg -n "Your Name|academicpages|Red Brick University|none@example.org|GitHub University|Skill 1" _config.yml _data/navigation.yml _pages/about.md _pages/cv.md
+  ! rg -n "Your Name|academicpages|Red Brick University|none@example.org|GitHub University|Skill 1" _config.yml _data/navigation.yml _pages/about.md
   ```
 
   Expected: exit code 0 with no output.
 
-- [ ] **Step 7: Commit the identity and navigation change**
+- [ ] **Step 6: Commit the identity and navigation change**
 
   ```bash
-  git --git-dir=.site-git --work-tree=. add _config.yml _data/navigation.yml _pages/about.md _pages/cv.md
+  git --git-dir=.site-git --work-tree=. add _config.yml _data/navigation.yml _pages/about.md
   git --git-dir=.site-git --work-tree=. commit -m "Replace template identity and navigation"
   ```
 
