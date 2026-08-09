@@ -1,3 +1,3 @@
 <li class="teaching-item">
-  <p class="teaching-item__entry"><strong class="teaching-item__title">{{ post.title }}</strong> — {{ post.role }} ({{ post.semester }} {{ post.date | date: "%Y" }}).{% if post.notes %} {{ post.notes }}{% endif %}{% if post.link %} <a href="{{ post.link }}">Course page</a>.{% endif %}</p>
+  <p class="teaching-item__entry">{{ post.semester }} {{ post.date | date: "%Y" }} — <strong class="teaching-item__title">{{ post.title }}</strong> — {{ post.role }}.{% if post.notes %} {{ post.notes }}{% endif %}{% if post.link %} <a href="{{ post.link }}">Course page</a>.{% endif %}</p>
 </li>
