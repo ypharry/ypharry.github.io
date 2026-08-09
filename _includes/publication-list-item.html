@@ -1,0 +1,22 @@
+<li class="publication-item">
+  <h3 class="publication-item__title">{{ post.title }}</h3>
+  {% if post.authors %}
+    <p class="publication-item__authors">{{ post.authors }}</p>
+  {% endif %}
+
+  {% if post.venue or post.date or post.status %}
+    <p class="publication-item__meta">
+      {% if post.venue %}{{ post.venue }}{% endif %}
+      {% if post.date %}{% if post.venue %}, {% endif %}{{ post.date | date: "%Y" }}{% endif %}
+      {% if post.status %}{% if post.venue or post.date %}; {% endif %}{{ post.status }}{% endif %}
+    </p>
+  {% endif %}
+
+  {% if post.paperurl or post.doi or post.arxiv %}
+    <p class="publication-item__links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+      {% if post.doi %}{% if post.paperurl %} | {% endif %}<a href="{{ post.doi }}">DOI</a>{% endif %}
+      {% if post.arxiv %}{% if post.paperurl or post.doi %} | {% endif %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
+    </p>
+  {% endif %}
+</li>

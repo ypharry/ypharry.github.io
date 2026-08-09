@@ -7,6 +7,18 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign teaching_entries = site.teaching | sort: "date" | reverse %}
+{% assign current_academic_year = "" %}
+
+<div class="teaching-list">
+  {% for post in teaching_entries %}
+    {% if forloop.first or post.academic_year != current_academic_year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      {% assign current_academic_year = post.academic_year %}
+      <h2>{{ post.academic_year }}</h2>
+      <ul class="teaching-list">
+    {% endif %}
+    {% include teaching-list-item.html %}
+  {% endfor %}
+  {% if teaching_entries.size > 0 %}</ul>{% endif %}
+</div>

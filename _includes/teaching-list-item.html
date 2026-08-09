@@ -1,0 +1,13 @@
+<li class="teaching-item">
+  <div class="teaching-item__semester">{{ post.semester }}</div>
+  <div class="teaching-item__details">
+    <h3 class="teaching-item__title">{{ post.title }}</h3>
+    <p class="teaching-item__meta">{{ post.role }}{% if post.venue %}, {{ post.venue }}{% endif %}</p>
+    {% if post.notes %}
+      <p class="teaching-item__notes">{{ post.notes }}</p>
+    {% endif %}
+    {% if post.link %}
+      <p class="teaching-item__links"><a href="{{ post.link }}">Course page</a></p>
+    {% endif %}
+  </div>
+</li>
