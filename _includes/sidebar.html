@@ -1,25 +1,43 @@
 {% include base_path %}
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+<details class="profile-sidebar">
+  <summary class="profile-rail">MENU · HW</summary>
+  <div class="profile-panel">
+    <div class="profile-panel__identity">
+      <p class="profile-panel__name">{{ site.author.name }}</p>
+      {% if site.author.bio %}
+        <p class="profile-panel__role">{{ site.author.bio }}</p>
       {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
+    </div>
+
+    <nav class="profile-panel__nav" aria-label="Primary navigation">
+      <ul>
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign link_url = link.url %}
+          {% else %}
+            {% assign link_url = link.url | relative_url %}
+          {% endif %}
+          <li><a href="{{ link_url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <nav class="profile-panel__links" aria-label="Academic links">
+      <ul>
+        {% if site.author.email %}
+          <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+        {% endif %}
+        {% if site.author.uri %}
+          <li><a href="{{ site.author.uri }}">Princeton profile</a></li>
+        {% endif %}
+        {% if site.author.googlescholar %}
+          <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+        {% endif %}
+        {% if site.author.orcid %}
+          <li><a href="{{ site.author.orcid }}">ORCID</a></li>
+        {% endif %}
+      </ul>
+    </nav>
   </div>
-{% endif %}
+</details>
