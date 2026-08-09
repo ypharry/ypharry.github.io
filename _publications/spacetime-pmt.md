@@ -1,10 +1,11 @@
 ---
-title: "spacetime PMT"
+title: "On the spacetime positive energy theorem in arbitrary dimension"
 collection: publications
 category: preprints
 sort_order: 2
 date: 2026-04-20
-authors: "Yipeng (Harry) Wang; joint with Simon Brendle"
-status: "preprint"
+collaborators: "Simon Brendle"
+status: "Preprint"
+arxiv: "https://arxiv.org/abs/2604.18561"
 permalink: /publication/spacetime-pmt
 ---

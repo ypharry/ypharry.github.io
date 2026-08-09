@@ -1,9 +1,9 @@
 ---
-title: "Uniqueness of Cylindrical Tangent Cones C_{p,q} × R"
+title: 'Uniqueness of Cylindrical Tangent Cones \(C_{p,q}\times\mathbb{R}\)'
 collection: publications
-category: preprints
+category: publications
 sort_order: 7
-authors: "Yipeng (Harry) Wang; joint with Benjy Firester and Raphael Tsiamis"
+collaborators: "Benjy Firester and Raphael Tsiamis"
 status: "Calc. Var. 65, 165 (2026)"
 date: 2026-01-01
 doi: "https://doi.org/10.1007/s00526-025-03238-5"

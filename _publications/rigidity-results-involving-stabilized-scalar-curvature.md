@@ -4,7 +4,7 @@ collection: publications
 category: preprints
 sort_order: 8
 date: 2025-01-12
-authors: "Yipeng (Harry) Wang"
-status: "to appear"
+status: "Preprint"
+arxiv: "https://arxiv.org/abs/2501.06951"
 permalink: /publication/rigidity-results-involving-stabilized-scalar-curvature
 ---
