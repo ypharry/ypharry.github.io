@@ -1,5 +1,5 @@
 ---
-title: "Calculus"
+title: "Calculus II"
 collection: teaching
 academic_year: "2026"
 semester: "Fall"
