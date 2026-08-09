@@ -68,7 +68,6 @@ $profile-panel-width: 15rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   cursor: pointer;
-  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease;
 
   &::marker {
     content: "";
