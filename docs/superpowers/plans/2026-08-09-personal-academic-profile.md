@@ -172,7 +172,7 @@
   Run:
 
   ```bash
-  ! rg -n "Paper Title|Teaching experience|Your Name|GitHub University|Blog post|Portfolio|Academic Pages is a ready-to-fork" _publications _teaching _talks _posts _portfolio _pages _data 2>/dev/null
+  ! rg -n "Paper Title|Teaching experience|Your Name|GitHub University|Blog post|Portfolio|Academic Pages is a ready-to-fork" _publications _teaching _talks _posts _portfolio _pages/about.md _pages/publications.html _pages/teaching.html _data 2>/dev/null
   ```
 
   Expected: exit code 0 with no output.
