@@ -137,9 +137,11 @@
   title: "Exact publication title"
   collection: publications
   category: publications # or preprints
-  date: YYYY-MM-DD
+  sort_order: 1 # preserve the authoritative CV order when no date is confirmed
+  date: YYYY-MM-DD # include only when confirmed in the source
   authors: "Exact author list"
   venue: "Journal, conference, or Preprint"
+  status: "preprint or publication status"
   paperurl: "https://..." # omit when unavailable
   doi: "https://doi.org/..." # omit when unavailable
   arxiv: "https://arxiv.org/..." # omit when unavailable
@@ -319,19 +321,19 @@
 - Consumes: publication and teaching front matter from Task 3.
 - Produces: Complete list pages with stable, simple markup and no filters.
 
-- [ ] **Step 1: Define descending collection order**
+- [ ] **Step 1: Define authoritative collection order**
 
-  In each page, sort the collection by `date` and reverse it:
+  For publications, preserve the authoritative CV order with an explicit `sort_order` field. Do not invent dates for entries that do not have confirmed dates:
 
   ```liquid
-  {% assign entries = site.publications | sort: "date" | reverse %}
+  {% assign entries = site.publications | sort: "sort_order" %}
   ```
 
-  Use the equivalent expression for teaching. Do not rely on filesystem order.
+  For teaching, sort by `date` and reverse it. Do not rely on filesystem order.
 
 - [ ] **Step 2: Render publication sections**
 
-  Group entries by `category`, with headings `Publications` and `Preprints`. For each entry, render title, authors, venue/year, and only the confirmed available links. Use `publication-list-item.html` to keep the row markup in one place.
+  Group entries by `category`, with headings `Publications` and `Preprints`. For each entry, render title, authors, venue/year when confirmed, status, and only the confirmed available links. Use `publication-list-item.html` to keep the row markup in one place.
 
 - [ ] **Step 3: Render teaching groups**
 
