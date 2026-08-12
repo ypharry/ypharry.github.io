@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% assign talk_years = "2026,2025,2024,2023" | split: "," %}
+
+{% for year in talk_years %}
+  {% assign talks_for_year = site.data.talks | where: "year", year %}
+  <section class="talk-group" aria-labelledby="talks-{{ year }}-heading">
+    <h2 id="talks-{{ year }}-heading">{{ year }}</h2>
+    <ul class="talk-list">
+      {% for talk in talks_for_year %}
+        {% include talk-list-item.html %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

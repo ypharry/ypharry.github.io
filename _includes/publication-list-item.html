@@ -1,3 +1,3 @@
 <li class="publication-item">
-  <p class="publication-item__entry"><strong class="publication-item__title">{{ post.title }}</strong>{% if post.collaborators %} (joint with {{ post.collaborators }}){% endif %}.{% if post.status %} {{ post.status }}.{% endif %}{% if post.paperurl %} <a href="{{ post.paperurl }}">PDF</a>.{% endif %}{% if post.doi %} <a href="{{ post.doi }}">DOI</a>.{% endif %}{% if post.arxiv %} <a href="{{ post.arxiv }}">arXiv</a>.{% endif %}</p>
+  <p class="publication-item__entry"><strong class="publication-item__title">{{ post.title }}</strong>{% if post.collaborators %} (joint with {% include collaborator-list.html %}){% endif %}.{% if post.status %} {{ post.status }}.{% endif %}{% if post.paperurl %} <a href="{{ post.paperurl }}">PDF</a>.{% endif %}{% if post.doi %} <a href="{{ post.doi }}">DOI</a>.{% endif %}{% if post.arxiv %} <a href="{{ post.arxiv }}">arXiv</a>.{% endif %}</p>
 </li>

@@ -14,6 +14,13 @@ redirect_from:
   <p class="home-intro__role">Instructor, Department of Mathematics, Princeton University</p>
 </header>
 
-<p>I am an instructor at Princeton University. I was advised by Simon Brendle at Columbia, and my research interests lie in geometric analysis and various aspects of differential geometry. Currently, I am focused on investigating problems related to minimal surfaces and the geometry of manifolds with positive scalar curvature.</p>
+<p>I am an instructor at Princeton University. I was advised by <a href="https://www.columbia.edu/~sab2280/main.html">Simon Brendle</a> at Columbia University.</p>
 
-You can find my [Publications](/publications/), [Teaching](/teaching/), and [CV](/cv/) here.
+<p class="home-contact"><span>Email: yipeng.wang at princeton dot edu</span> · <a href="https://www.math.princeton.edu/people/yipeng-wang">Princeton profile</a></p>
+
+<section class="home-research" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research</h2>
+  <p>My research lies in geometric analysis and differential geometry. I study how curvature conditions shape the global geometry and topology of manifolds. I am interested in questions involving scalar curvature, minimal hypersurfaces and other geometric variational problems.</p>
+</section>
+
+You can find my [Publications](/publications/), [Talks](/talks/), [Teaching](/teaching/), and [CV](/cv/) here.

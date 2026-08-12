@@ -29,8 +29,8 @@ author:
   bio              : "Instructor at Princeton University"
   location         :
   employer         :
-  uri              : "https://www.math.princeton.edu/people/yipeng-wang"
-  email            : "yw9696@princeton.edu"
+  uri              :
+  email            :
 
   # Academic websites
   academia         : # URL

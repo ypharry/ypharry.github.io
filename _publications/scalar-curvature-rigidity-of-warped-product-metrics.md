@@ -3,7 +3,10 @@ title: "Scalar curvature rigidity of warped product metrics"
 collection: publications
 category: publications
 sort_order: 13
-collaborators: "Christian Bär, Bernard Hanke, and Simon Brendle"
+collaborators:
+  - "Christian Bär"
+  - "Bernhard Hanke"
+  - "Simon Brendle"
 status: "SIGMA 20 (2024), 035"
 date: 2024-01-01
 doi: "https://doi.org/10.3842/SIGMA.2024.035"

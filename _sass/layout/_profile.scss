@@ -73,6 +73,8 @@ $profile-panel-width: 15rem;
 }
 
 .profile-sidebar {
+  position: sticky;
+  top: calc(#{$masthead-height} + 1rem);
   min-width: 0;
   width: 100%;
   color: var(--global-text-color);
@@ -213,14 +215,16 @@ $profile-panel-width: 15rem;
 
 .profile-layout {
   .publication-list,
-  .teaching-list {
+  .teaching-list,
+  .talk-list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   .publication-item,
-  .teaching-item {
+  .teaching-item,
+  .talk-item {
     padding: 0.4rem 0;
     border-top: 1px solid var(--global-border-color);
 
@@ -235,13 +239,15 @@ $profile-panel-width: 15rem;
   }
 
   .publication-item,
-  .teaching-item {
+  .teaching-item,
+  .talk-item {
     font-size: 0.95rem;
     line-height: 1.4;
   }
 
   .publication-item__entry,
-  .teaching-item__entry {
+  .teaching-item__entry,
+  .talk-item__entry {
     margin: 0;
     line-height: 1.4;
   }
@@ -253,7 +259,8 @@ $profile-panel-width: 15rem;
   }
 
   .publication-item a,
-  .teaching-item a {
+  .teaching-item a,
+  .talk-item a {
     text-decoration: underline;
     text-underline-offset: 0.12em;
     text-decoration-thickness: 1px;
@@ -261,13 +268,16 @@ $profile-panel-width: 15rem;
 
   .publication-item p,
   .teaching-item p,
+  .talk-item p,
   .publication-item ul,
-  .teaching-item ul {
+  .teaching-item ul,
+  .talk-item ul {
     margin-bottom: 0;
   }
 
   .publication-item + .publication-item,
-  .teaching-item + .teaching-item {
+  .teaching-item + .teaching-item,
+  .talk-item + .talk-item {
     margin-top: 0;
   }
 }
