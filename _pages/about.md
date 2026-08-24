@@ -11,6 +11,7 @@ redirect_from:
 <header class="home-intro">
   <p class="home-intro__eyebrow">Geometric analysis · Differential geometry</p>
   <h1>Yipeng (Harry) Wang</h1>
+  <p class="home-intro__chinese">王一芃</p>
   <p class="home-intro__role">Instructor, Department of Mathematics, Princeton University</p>
 </header>
 

@@ -65,6 +65,13 @@ $profile-panel-width: 15rem;
   line-height: 1.05;
 }
 
+.home-intro__chinese {
+  margin: 0.35rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: $type-size-4;
+  line-height: 1.2;
+}
+
 .home-intro__role {
   margin: 0.7rem 0 0;
   color: var(--global-text-color-light);
