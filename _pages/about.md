@@ -14,7 +14,7 @@ redirect_from:
   <p class="home-intro__role">Instructor, Department of Mathematics, Princeton University</p>
 </header>
 
-<p>I am currently an instructor in the Department of Mathematics at Princeton University. I graduated from Columbia University in May 2026, where I was advised by <a href="https://www.columbia.edu/~sab2280/main.html">Simon Brendle</a>. In September 2027, I will join the School of Mathematics at the Institute for Advanced Study as a Member.</p>
+<p>I am currently an instructor in the Department of Mathematics at Princeton University. I graduated from Columbia University in May 2026, where I was fortunate to be advised by <a href="https://www.columbia.edu/~sab2280/main.html">Simon Brendle</a>. In September 2027, I will join the School of Mathematics at the Institute for Advanced Study as a Member.</p>
 
 <p class="home-contact"><span>Email: yipeng.wang at princeton dot edu</span> · <a href="https://www.math.princeton.edu/people/yipeng-wang">Princeton profile</a></p>
 
