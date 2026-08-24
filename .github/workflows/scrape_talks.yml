@@ -8,6 +8,9 @@ on:
       - 'talkmap.ipynb'
       - '.github/workflows/scrape_talks.yml'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
