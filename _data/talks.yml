@@ -17,6 +17,12 @@
   venue: "Princeton University"
 
 - year: "2026"
+  display_date: "September 2026"
+  title: "The Positive Mass Theorem in Arbitrary Dimensions"
+  series: "Geometry Seminars and Colloquia"
+  venue: "Lehigh University"
+
+- year: "2026"
   display_date: "July 2026"
   title: "The Positive Mass Theorem in Arbitrary Dimensions"
   series: "ICM Satellite Conference on Conformal Geometry, Einstein Manifolds, and Minimal Submanifolds"
