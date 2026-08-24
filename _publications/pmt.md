@@ -6,7 +6,7 @@ sort_order: 3
 date: 2026-04-09
 collaborators:
   - "Simon Brendle"
-status: "Preprint"
+status: "Submitted"
 paperurl: "/files/pmt.pdf"
 arxiv: "https://arxiv.org/abs/2604.08473"
 permalink: /publication/pmt
